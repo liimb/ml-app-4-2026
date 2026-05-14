@@ -4,6 +4,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 import io
 import streamlit as st
+from streamlit_option_menu import option_menu
 import pandas as pd
 import pickle
 import numpy as np
@@ -60,7 +61,19 @@ def load_resources():
 
 resources = load_resources()
 
-page = st.sidebar.radio("Навигация", ["Разработчик", "Датасет", "Визуализация", "Предсказание"])
+with st.sidebar:
+    page = option_menu(
+        menu_title="Меню", 
+        options=["Разработчик", "Датасет", "Визуализация", "Предсказание"],
+        icons=["person-circle", "table", "bar-chart-line", "gem"],
+        menu_icon="cast", 
+        default_index=0,
+        styles={
+            "container": {"padding": "5!important", "background-color": "transparent"},
+            "nav-link": {"font-size": "16px", "text-align": "left", "margin":"0px"},
+            "nav-link-selected": {"background-color": "#007bff"},
+        }
+    )
 
 if page == "Разработчик":
     st.title("О разработчике")

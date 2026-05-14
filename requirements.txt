@@ -8,3 +8,4 @@ tensorflow
 scikit-learn
 lightgbm
 catboost
+streamlit-option-menu
