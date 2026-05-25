@@ -20,12 +20,12 @@
 
 | Идентификатор | Архитектура модели | Метрика качества ($R^2$) | Формат сериализации |
 | :--- | :--- | :---: | :--- |
-| **ML1** | Полиномиальная регрессия | `0.951` | `.pkl` (pickle) |
-| **ML2** | Gradient Boosting Regressor | `0.981` | `.pkl` (pickle) |
-| **ML3** | CatBoost Regressor | **`0.982`** | `.cbm` (native) |
-| **ML4** | LGBMRegressor (LightGBM) | `0.980` | `.txt` (booster) |
-| **ML5** | Stacking Regressor (Tree + Poly $\rightarrow$ Ridge) | `0.976` | `.pkl` (pickle) |
-| **ML6** | Глубокая полносвязная нейронная сеть (FCNN + PCA) | `0.978` | `.keras` (native) |
+| **ML1** | Полиномиальная регрессия | `0.951` | `.pkl` |
+| **ML2** | Gradient Boosting Regressor | `0.981` | `.pkl` |
+| **ML3** | CatBoost Regressor | **`0.982`** | `.cbm` |
+| **ML4** | LGBMRegressor (LightGBM) | `0.980` | `.txt` |
+| **ML5** | Stacking Regressor (Tree + Poly $\rightarrow$ Ridge) | `0.976` | `.pkl` |
+| **ML6** | Глубокая полносвязная нейронная сеть (FCNN + PCA) | `0.978` | `.keras` |
 
 ---
 
